@@ -15,13 +15,13 @@ Node sürümü: `.node-version`. Üretim dosyaları `dist/` altında oluşur.
 
 ## İletişim
 
-`.env.example` dosyasını `.env` olarak kopyalayın ve `VITE_CONTACT_EMAIL` alanına gerçek e-posta adresini girin. Cloudflare Pages ortam değişkenlerine de aynı değeri ekleyin ve yeniden build alın. Bu değer herkese açık build içine girer; gizli anahtar koymayın.
+Varsayılan iletişim adresi `techyr@techyr.app`, telefon ve WhatsApp numarası `+90 544 246 06 60`. Adresi değiştirmek için `.env.example` dosyasını `.env` olarak kopyalayın ve `VITE_CONTACT_EMAIL` alanını düzenleyin. Cloudflare Pages ortam değişkenlerine de aynı değeri ekleyin ve yeniden build alın. Bu değer herkese açık build içine girer; gizli anahtar koymayın.
 
-Form, adres tanımlanmışsa e-posta uygulamasında bir proje özeti açar. Kullanıcı gönderme işlemini kendi e-posta uygulamasında yapar. Adres tanımlanmamışsa proje özetini yerel `.txt` dosyası olarak indirir; hiçbir mesaj gönderilmiş gibi gösterilmez. Form verileri sunucuya iletilmez. Doğrudan e-posta gönderimi için ayrıca backend gerekir.
+Form e-posta uygulamasında bir proje özeti açar. Kullanıcı gönderme işlemini kendi e-posta uygulamasında yapar. Form verileri sunucuya iletilmez. WhatsApp bağlantısı kullanıcıyı WhatsApp görüşmesine yönlendirir. Doğrudan sunucudan e-posta gönderimi için ayrıca backend gerekir.
 
 ## GitHub ve Cloudflare Pages
 
-1. GitHub üzerinde `techyr` deposu oluşturup bu projeyi `main` dalına gönderin.
+1. GitHub deposu: https://github.com/cemo34/techyr. Üretim dalı: `main`.
 2. Cloudflare Dashboard → Workers & Pages → Create application → Pages → Connect to Git bölümünden GitHub deposunu seçin.
 3. Production branch: `main`; Framework preset: React (Vite); Build command: `npm run build`; Build output directory: `dist`; Root directory: depo kökü.
 4. Environment variables: `NODE_VERSION=22.16.0` ve gerçek `VITE_CONTACT_EMAIL`.
