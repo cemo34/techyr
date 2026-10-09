@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 390" fill="none">
+ <title>Techyr eskiz logosu</title>
+ <defs><filter id="pencil" x="-5%" y="-5%" width="110%" height="110%"><feTurbulence type="fractalNoise" baseFrequency=".045" numOctaves="3" seed="8" result="noise"/><feDisplacementMap in="SourceGraphic" in2="noise" scale="2.8" xChannelSelector="R" yChannelSelector="G"/></filter></defs>
+ <g stroke="#302b24" stroke-linecap="round" stroke-linejoin="round" filter="url(#pencil)">
+  <g stroke-width="13">
+   <path d="M90 71L788 58 M90 136L231 130 M204 76C181 111 156 151 129 197C112 225 104 249 116 263C128 278 162 270 188 240"/>
+   <path d="M235 221L324 215C337 184 321 168 298 176C266 187 235 222 239 249C243 279 286 276 326 254"/>
+   <path d="M440 178C415 163 383 181 366 218C349 251 358 275 385 276C409 277 427 265 443 250"/>
+   <path d="M549 74L452 278 M486 212C507 184 532 174 550 185C562 194 552 215 544 236L528 275"/>
+   <path d="M610 184C589 224 569 266 584 270C601 275 630 237 652 195 M650 184L559 351"/>
+   <path d="M674 270L717 186 M700 219C720 187 748 177 767 186 M35 357L795 340"/>
+  </g>
+  <g stroke-width="2" opacity=".7">
+   <path d="M81 66L794 54 M91 79L782 65 M82 142L226 137 M196 76C165 127 91 237 111 265C128 287 166 278 193 244 M209 81L126 237"/>
+   <path d="M232 224L328 219 M239 217C247 190 303 154 327 177C352 203 314 217 273 218 M244 247C250 274 286 281 331 254"/>
+   <path d="M442 173C418 155 379 183 361 223C344 264 365 284 394 279 M441 255C413 284 379 286 361 270"/>
+   <path d="M553 72L458 283 M543 83L447 274 M489 211C523 162 566 174 557 206L534 276 M604 181L573 250C562 285 592 293 624 246 M657 181L565 355 M650 197L552 348"/>
+   <path d="M669 275L710 190C732 179 750 173 776 181 M679 274L720 195 M32 351L800 333 M39 362L788 346"/>
+  </g>
+ </g>
+</svg>
