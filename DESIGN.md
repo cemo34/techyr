@@ -12,4 +12,4 @@
 - Logo: referanstaki uzun üst/alt çizgi, eğik harfler, uzayan h ve y, çift eskiz konturları. SVG olarak elle uyarlanmıştır; taranmış çizim değildir.
 - Görsel: unbranded Android POS, fiş ve bağlantı donanımı, kraft zemin, doğal yan ışık. AI konseptidir; gerçek müşteri veya ürün referansı değildir.
 
-Uygulanan beceri: [Leonxlnx/taste-skill, design-taste-frontend](https://github.com/Leonxlnx/taste-skill/blob/main/skills/taste-skill/SKILL.md). Kullanıcının minimal kâğıt ve eskiz logo isteği, genel görsel ve koyu tema önerilerine göre önceliklidir.
+Uygulanan beceriler: [design-taste-frontend](https://github.com/Leonxlnx/taste-skill/blob/main/skills/taste-skill/SKILL.md), [minimalist-ui](https://github.com/Leonxlnx/taste-skill/blob/main/skills/minimalist-skill/SKILL.md). Kullanıcının minimal kâğıt ve eskiz logo isteği, genel görsel ve koyu tema önerilerine göre önceliklidir.
