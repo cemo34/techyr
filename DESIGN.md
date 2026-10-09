@@ -5,7 +5,7 @@
 - DESIGN_VARIANCE: 6; MOTION_INTENSITY: 3; VISUAL_DENSITY: 3.
 - Tek tema: kullanıcının istediği kese kâğıdı renginde açık yüzey. Sistem koyu tema tercihi markanın açık kâğıt yüzeyini değiştirmez.
 - Yerel Manrope Variable fontu. İnce çizgiler, açık yerleşim, asimetrik ağırlık; yükseltilmiş kartlar ve renkli gradyanlar yok.
-- Kâğıt #d8c8ae, mürekkep #302b24, ikincil metin #605649, çizgi #b8a88f, vurgu #645340.
+- Kâğıt #d8c8ae, mürekkep #302b24, ikincil metin #51493d, çizgi #b8a88f, vurgu #554936.
 - Köşe sistemi: yüzey ve düğmelerde 2px, form alanlarında düz alt çizgi.
 - Katmanlar: mobil menü 2, tıklamaları engellemeyen sabit kâğıt dokusu 3, erişilebilir içerik atlama bağlantısı 4.
 - Hareket yalnızca etkileşim geri bildirimi; reduced-motion desteği var.

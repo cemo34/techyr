@@ -59,7 +59,7 @@ export default function App() {
     <main id="main">
       <section className="hero container" aria-labelledby="hero-heading">
         <div className="hero-intro"><span className="eyebrow">Yazılım. Ödeme. Yapay zekâ.</span><h1 id="hero-heading">Fikirden<br/><span>çalışan sisteme.</span></h1><p>Yazılım, yapay zekâ ve ödeme teknolojilerini bir araya getiriyor; işinize özel, sağlam dijital çözümler geliştiriyoruz.</p><a className="text-link" href="#cozumler">Çözümlerimizi keşfedin <ArrowDownRight size={22}/></a></div>
-        <div className="hero-mark"><img src="/techyr-logo.svg" alt="Çizimden doğan Techyr eskiz logosu" width="850" height="390" /></div>
+        <div className="hero-mark"><img src="/techyr-logo.svg" alt="Çizimden doğan Techyr eskiz logosu" width="850" height="390" fetchPriority="high" /></div>
       </section>
       <section id="cozumler" className="solutions container section" aria-labelledby="solutions-heading">
         <div className="section-heading"><h2 id="solutions-heading">Karmaşık ihtiyaçlar.<br/><span>Net çözümler.</span></h2><p>Bir ürünün kodundan ödeme noktasına, kalite kontrolünden canlı kullanıma kadar yanınızdayız.</p></div>
@@ -70,7 +70,7 @@ export default function App() {
         </article>)}</div>
       </section>
       <section className="payment-section container section" aria-labelledby="payment-heading">
-        <div className="payment-visual"><img src="/images/payment-studio.webp" alt="Kâğıt zemin üzerinde Android POS terminali, fiş ve kasa bağlantı donanımı" width="1536" height="1024" loading="lazy"/><span className="image-caption">Uygulamadan cihaza, uçtan uca.</span></div>
+        <div className="payment-visual"><img src="/images/payment-studio.webp" srcSet="/images/payment-studio-640.webp 640w, /images/payment-studio-960.webp 960w, /images/payment-studio.webp 1536w" sizes="(max-width: 767px) calc(100vw - 40px), (max-width: 1100px) calc((100vw - 117px) / 2), (max-width: 1440px) calc((100vw - 192px) / 2), 620px" alt="Kâğıt zemin üzerinde Android POS terminali, fiş ve kasa bağlantı donanımı" width="1536" height="1024" loading="lazy"/><span className="image-caption">Uygulamadan cihaza, uçtan uca.</span></div>
         <div className="payment-copy"><span className="eyebrow">Ödeme sistemleri</span><h2 id="payment-heading">Her bağlantının<br/>arkasında mühendislik.</h2><p className="section-description">Ödeme ekosisteminin farklı parçalarını, işletmenizin ihtiyaçlarına göre bir araya getiriyoruz.</p><div className="payment-areas">{paymentAreas.map(([title, text]) => <article key={title}><h3>{title}</h3><p>{text}</p></article>)}</div></div>
       </section>
       <section id="yaklasim" className="approach container section" aria-labelledby="approach-heading">
