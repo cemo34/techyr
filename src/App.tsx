@@ -14,6 +14,8 @@ import {
   WhatsappLogo,
   Phone,
 } from "@phosphor-icons/react";
+import TechAnimation from "./TechAnimation";
+import { ArcInteractiveShowcase } from "./components/arc/ArcInteractiveShowcase";
 
 const siteEmail =
   import.meta.env.VITE_CONTACT_EMAIL?.trim() || "techyr@techyr.app";
@@ -195,13 +197,7 @@ export default function App() {
             </a>
           </div>
           <div className="hero-mark">
-            <img
-              src="/techyr-logo.svg"
-              alt="Çizimden doğan Techyr eskiz logosu"
-              width="850"
-              height="390"
-              fetchPriority="high"
-            />
+            <TechAnimation />
           </div>
         </section>
         <section
@@ -220,7 +216,8 @@ export default function App() {
               kullanıma kadar yanınızdayız.
             </p>
           </div>
-          <div className="capabilities">
+          <ArcInteractiveShowcase />
+          <div className="capabilities" style={{ marginTop: "40px" }}>
             {capabilities.map((item, i) => (
               <article
                 className={`capability ${expanded === i ? "expanded" : ""}`}

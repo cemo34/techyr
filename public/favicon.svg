@@ -1,1 +1,28 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="10" fill="#d8c8ae"/><path d="M12 13h43M15 29h29M37 14L22 43q-7 15 13 5M8 56h46" stroke="#302b24" stroke-width="4" fill="none" stroke-linecap="round"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <!-- Antigravity dark canvas -->
+  <rect width="64" height="64" rx="14" fill="#0d1117" stroke="#38bdf8" stroke-width="1.2" stroke-opacity="0.4"/>
+  
+  <!-- Subtle drafting grid lines -->
+  <line x1="8" y1="18" x2="56" y2="18" stroke="#38bdf8" stroke-width="0.8" opacity="0.3" stroke-dasharray="2 2" />
+  <line x1="8" y1="46" x2="56" y2="46" stroke="#38bdf8" stroke-width="0.8" opacity="0.3" stroke-dasharray="2 2" />
+  
+  <!-- Diagonal drafting ray -->
+  <line x1="10" y1="28" x2="34" y2="4" stroke="#38bdf8" stroke-width="0.9" opacity="0.5" stroke-dasharray="3 2" />
+  <line x1="20" y1="8" x2="48" y2="54" stroke="#64748b" stroke-width="0.8" opacity="0.4" stroke-dasharray="2 2" />
+
+  <defs>
+    <pattern id="fav-hatch" width="4" height="4" patternTransform="rotate(45 0 0)" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="0" y2="4" stroke="#38bdf8" stroke-width="0.9" stroke-opacity="0.75" />
+    </pattern>
+  </defs>
+
+  <!-- Slanted T with 10% slant -->
+  <g transform="matrix(1 0 -0.176 1 4 0)">
+    <path d="M 16 18 L 48 18 L 48 24 L 35 24 L 35 46 L 29 46 L 29 24 L 16 24 Z" fill="url(#fav-hatch)" stroke="#38bdf8" stroke-width="1.2" />
+    <path d="M 16 18 L 32 18 L 32 24 L 35 24 L 35 34 L 29 34 L 29 24 L 16 24 Z" fill="#38bdf8" opacity="0.5" />
+    <line x1="13" y1="18" x2="51" y2="18" stroke="#38bdf8" stroke-width="1.2" />
+    <line x1="16" y1="15" x2="16" y2="27" stroke="#38bdf8" stroke-width="1.2" />
+    <line x1="48" y1="15" x2="48" y2="27" stroke="#38bdf8" stroke-width="1.2" />
+    <line x1="26" y1="46" x2="38" y2="46" stroke="#38bdf8" stroke-width="1.2" />
+  </g>
+</svg>
