@@ -1,0 +1,241 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 440" fill="none">
+  <title>Techyr Logo - Harmonized Architectural Wordmark</title>
+  <defs>
+    <!-- Primary guideline fading gradient (T -> e -> c -> h -> y -> r vanishes) -->
+    <linearGradient id="g-fade-pri" gradientUnits="userSpaceOnUse" x1="20" y1="0" x2="1050" y2="0">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.9"/>
+      <stop offset="16%" stop-color="#38bdf8" stop-opacity="0.75"/>
+      <stop offset="32%" stop-color="#94a3b8" stop-opacity="0.45"/>
+      <stop offset="50%" stop-color="#94a3b8" stop-opacity="0.22"/>
+      <stop offset="68%" stop-color="#94a3b8" stop-opacity="0.08"/>
+      <stop offset="80%" stop-color="#94a3b8" stop-opacity="0.02"/>
+      <stop offset="84%" stop-color="#94a3b8" stop-opacity="0.0"/>
+      <stop offset="100%" stop-color="#94a3b8" stop-opacity="0.0"/>
+    </linearGradient>
+
+    <!-- Secondary guideline fading gradient -->
+    <linearGradient id="g-fade-sec" gradientUnits="userSpaceOnUse" x1="20" y1="0" x2="1050" y2="0">
+      <stop offset="0%" stop-color="#64748b" stop-opacity="0.7"/>
+      <stop offset="18%" stop-color="#64748b" stop-opacity="0.55"/>
+      <stop offset="36%" stop-color="#64748b" stop-opacity="0.3"/>
+      <stop offset="56%" stop-color="#64748b" stop-opacity="0.1"/>
+      <stop offset="74%" stop-color="#64748b" stop-opacity="0.02"/>
+      <stop offset="83%" stop-color="#64748b" stop-opacity="0.0"/>
+      <stop offset="100%" stop-color="#64748b" stop-opacity="0.0"/>
+    </linearGradient>
+
+    <!-- Blueprint 45-degree hatch pattern for unfinished T -->
+    <pattern id="hatch-t" width="10" height="10" patternTransform="rotate(45 0 0)" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="0" y2="10" stroke="#38bdf8" stroke-width="1.8" stroke-opacity="0.75" />
+    </pattern>
+
+    <!-- Secondary cross hatch -->
+    <pattern id="cross-t" width="8" height="8" patternTransform="rotate(-30 0 0)" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="0" y2="8" stroke="#94a3b8" stroke-width="1.2" stroke-opacity="0.45" />
+    </pattern>
+
+    <style>
+      .glyph { fill: #f8fafc; }
+      .guide-main { stroke: url(#g-fade-pri); }
+      .guide-sub { stroke: url(#g-fade-sec); }
+    </style>
+  </defs>
+
+  <rect width="1120" height="440" fill="#0d1117" />
+
+  <!-- Horizontal architectural guidelines -->
+  <line x1="10" y1="70" x2="1080" y2="70" class="guide-main" stroke-width="1.5" />
+  <line x1="10" y1="98" x2="680" y2="98" class="guide-sub" stroke-width="1.2" stroke-dasharray="6 4" />
+  <line x1="10" y1="150" x2="1080" y2="150" class="guide-main" stroke-width="1.5" />
+  <line x1="10" y1="210" x2="650" y2="210" class="guide-sub" stroke-width="1" stroke-dasharray="4 4" />
+  <line x1="10" y1="270" x2="1080" y2="270" class="guide-main" stroke-width="1.75" />
+  <line x1="10" y1="380" x2="880" y2="380" class="guide-sub" stroke-width="1.2" stroke-dasharray="5 5" />
+
+  <!-- LOGICAL ARCHITECTURAL DRAFTING GUIDELINES AT T -->
+  <g class="construction-t" opacity="0.95">
+    <!-- 1. Central Axis of Symmetry (Centerline) -->
+    <line x1="110" y1="20" x2="110" y2="330" stroke="#38bdf8" stroke-width="1.4" stroke-dasharray="14 4 3 4" />
+    <line x1="102" y1="20" x2="118" y2="20" stroke="#38bdf8" stroke-width="1.5" />
+    <line x1="102" y1="330" x2="118" y2="330" stroke="#38bdf8" stroke-width="1.5" />
+
+    <!-- 2. Vertical Stem Boundaries Projection (width = 28px) -->
+    <line x1="96" y1="40" x2="96" y2="305" stroke="#38bdf8" stroke-width="1.2" stroke-dasharray="5 3" />
+    <line x1="124" y1="40" x2="124" y2="305" stroke="#38bdf8" stroke-width="1.2" stroke-dasharray="5 3" />
+
+    <!-- 3. Crossbar Vertical Boundary Projections (width = 148px) -->
+    <line x1="36" y1="40" x2="36" y2="135" stroke="#38bdf8" stroke-width="1.5" />
+    <line x1="184" y1="40" x2="184" y2="135" stroke="#38bdf8" stroke-width="1.5" />
+
+    <!-- 4. Crossbar Horizontal Alignment Guides -->
+    <line x1="15" y1="70" x2="215" y2="70" stroke="#38bdf8" stroke-width="1.6" />
+    <line x1="20" y1="98" x2="205" y2="98" stroke="#94a3b8" stroke-width="1.2" stroke-dasharray="6 3" />
+
+    <!-- 5. 45-degree Set-Square Proportional Construction Rays -->
+    <line x1="36" y1="70" x2="184" y2="218" stroke="#38bdf8" stroke-width="1.2" stroke-dasharray="6 4" opacity="0.65" />
+    <line x1="184" y1="70" x2="36" y2="218" stroke="#38bdf8" stroke-width="1.2" stroke-dasharray="6 4" opacity="0.65" />
+
+    <!-- Structural rays from stem base to crossbar ends -->
+    <line x1="96" y1="270" x2="36" y2="70" stroke="#64748b" stroke-width="1" stroke-dasharray="4 4" opacity="0.5" />
+    <line x1="124" y1="270" x2="184" y2="70" stroke="#64748b" stroke-width="1" stroke-dasharray="4 4" opacity="0.5" />
+
+    <!-- 6. Architectural Dimension Extension Lines (Witness lines) -->
+    <line x1="36" y1="48" x2="184" y2="48" stroke="#38bdf8" stroke-width="1" />
+    <line x1="31" y1="53" x2="41" y2="43" stroke="#38bdf8" stroke-width="1.6" />
+    <line x1="179" y1="53" x2="189" y2="43" stroke="#38bdf8" stroke-width="1.6" />
+
+    <line x1="18" y1="70" x2="18" y2="270" stroke="#38bdf8" stroke-width="1" />
+    <line x1="13" y1="75" x2="23" y2="65" stroke="#38bdf8" stroke-width="1.6" />
+    <line x1="13" y1="275" x2="23" y2="265" stroke="#38bdf8" stroke-width="1.6" />
+
+    <!-- Vertex corner ticks -->
+    <line x1="26" y1="70" x2="46" y2="70" stroke="#38bdf8" stroke-width="2" />
+    <line x1="36" y1="60" x2="36" y2="80" stroke="#38bdf8" stroke-width="2" />
+    <line x1="174" y1="70" x2="194" y2="70" stroke="#38bdf8" stroke-width="2" />
+    <line x1="184" y1="60" x2="184" y2="80" stroke="#38bdf8" stroke-width="2" />
+    <line x1="82" y1="270" x2="138" y2="270" stroke="#38bdf8" stroke-width="2" />
+
+    <!-- Center/Registration precision rings -->
+    <circle cx="36" cy="70" r="2.5" stroke="#38bdf8" stroke-width="1.2" fill="none" />
+    <circle cx="184" cy="70" r="2.5" stroke="#38bdf8" stroke-width="1.2" fill="none" />
+    <circle cx="110" cy="70" r="2.5" stroke="#38bdf8" stroke-width="1.2" fill="none" />
+    <circle cx="110" cy="144" r="3" stroke="#38bdf8" stroke-width="1.2" fill="none" opacity="0.8" />
+    <circle cx="110" cy="270" r="2.5" stroke="#38bdf8" stroke-width="1.2" fill="none" />
+  </g>
+
+  <!-- Fading guides across e and c -->
+  <g class="fading-guides" opacity="0.4">
+    <line x1="340" y1="95" x2="300" y2="315" stroke="#64748b" stroke-width="1.2" stroke-dasharray="5 5" />
+    <line x1="265" y1="240" x2="375" y2="120" stroke="#64748b" stroke-width="1" stroke-dasharray="4 4" />
+    <line x1="515" y1="115" x2="480" y2="305" stroke="#64748b" stroke-width="1" stroke-dasharray="3 6" opacity="0.4" />
+  </g>
+
+  <!-- Wordmark slanted by ~10 degrees (matrix skew -0.176) -->
+  <g transform="matrix(1 0 -0.176 1 45 0)">
+
+    <!-- LETTER T (In-progress architectural sketch) -->
+    <g class="letter-T-unfinished">
+      <path d="
+        M 36 70
+        L 184 70
+        L 184 98
+        L 124 98
+        L 124 270
+        L 96 270
+        L 96 98
+        L 36 98
+        Z
+      " fill="url(#hatch-t)" stroke="#38bdf8" stroke-width="2.2" stroke-linejoin="miter" />
+
+      <path d="M 36 70 L 184 70 L 184 98 L 36 98 Z" fill="url(#cross-t)" opacity="0.75" />
+
+      <path d="
+        M 36 70
+        L 110 70
+        L 110 98
+        L 124 98
+        L 124 165
+        L 96 165
+        L 96 98
+        L 36 98
+        Z
+      " fill="#38bdf8" opacity="0.45" />
+
+      <path d="
+        M 34 68 L 186 68 L 186 100 L 126 100 L 126 272 L 94 272 L 94 100 L 34 100 Z
+      " stroke="#38bdf8" stroke-width="1" stroke-dasharray="8 3" opacity="0.6" fill="none" />
+
+      <line x1="22" y1="70" x2="198" y2="70" stroke="#38bdf8" stroke-width="2" />
+      <line x1="26" y1="98" x2="194" y2="98" stroke="#38bdf8" stroke-width="1.5" opacity="0.75" />
+      <line x1="36" y1="56" x2="36" y2="112" stroke="#38bdf8" stroke-width="2" />
+      <line x1="184" y1="56" x2="184" y2="112" stroke="#38bdf8" stroke-width="2" />
+      <line x1="96" y1="84" x2="96" y2="284" stroke="#38bdf8" stroke-width="1.6" />
+      <line x1="124" y1="84" x2="124" y2="284" stroke="#38bdf8" stroke-width="1.6" />
+      <line x1="82" y1="270" x2="138" y2="270" stroke="#38bdf8" stroke-width="2" />
+    </g>
+
+    <!-- LETTER e -->
+    <path class="glyph" d="
+      M 210 210
+      C 210 172 240 150 278 150
+      C 316 150 346 172 346 210
+      L 346 222
+      L 238 222
+      C 240 244 258 256 278 256
+      C 300 256 320 248 328 238
+      L 344 250
+      C 330 270 306 270 278 270
+      C 240 270 210 248 210 210
+      Z
+      M 238 198
+      L 320 198
+      C 318 179 300 166 278 166
+      C 256 166 240 179 238 198
+      Z
+    " />
+
+    <!-- LETTER c (Identical twin of e) -->
+    <path class="glyph" d="
+      M 516 170
+      L 500 182
+      C 492 172 472 166 450 166
+      C 426 166 410 184 410 210
+      C 410 236 426 254 450 254
+      C 472 254 492 248 500 238
+      L 516 250
+      C 502 270 478 270 450 270
+      C 412 270 382 248 382 210
+      C 382 172 412 150 450 150
+      C 478 150 502 150 516 170
+      Z
+    " />
+
+    <!-- LETTER h (Original as requested) -->
+    <path class="glyph" d="
+      M 554 70
+      L 582 70
+      L 582 176
+      C 598 158 620 150 644 150
+      C 674 150 690 170 690 202
+      L 690 270
+      L 662 270
+      L 662 208
+      C 662 187 652 174 634 174
+      C 612 174 582 188 582 216
+      L 582 270
+      L 554 270
+      Z
+    " />
+
+    <!-- LETTER y (h flipped 180 degrees as requested!) -->
+    <path class="glyph" d="
+      M 862 380
+      L 834 380
+      L 834 244
+      C 818 262 796 270 772 270
+      C 742 270 726 250 726 218
+      L 726 150
+      L 754 150
+      L 754 212
+      C 754 233 764 246 782 246
+      C 804 246 834 232 834 204
+      L 834 150
+      L 862 150
+      Z
+    " />
+
+    <!-- LETTER r -->
+    <path class="glyph" d="
+      M 898 150
+      L 926 150
+      L 926 180
+      C 939 160 959 150 984 150
+      L 999 150
+      L 999 178
+      L 984 178
+      C 956 178 926 196 926 226
+      L 926 270
+      L 898 270
+      Z
+    " />
+  </g>
+</svg>

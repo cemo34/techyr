@@ -1,160 +1,231 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 440" fill="none">
-  <title>Techyr Logo - Harmonized Architectural Wordmark</title>
+  <title>Techyr Logo - Concept to System Architectural Wordmark</title>
   <defs>
-    <!-- Primary guideline fading gradient (T -> e -> c -> h -> y -> r vanishes) -->
-    <linearGradient id="g-fade-pri" gradientUnits="userSpaceOnUse" x1="20" y1="0" x2="1050" y2="0">
-      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.9"/>
-      <stop offset="16%" stop-color="#38bdf8" stop-opacity="0.75"/>
-      <stop offset="32%" stop-color="#94a3b8" stop-opacity="0.45"/>
-      <stop offset="50%" stop-color="#94a3b8" stop-opacity="0.22"/>
-      <stop offset="68%" stop-color="#94a3b8" stop-opacity="0.08"/>
-      <stop offset="80%" stop-color="#94a3b8" stop-opacity="0.02"/>
-      <stop offset="84%" stop-color="#94a3b8" stop-opacity="0.0"/>
+    <!-- Master guideline fading gradient:
+         At x=10..184 (T) -> 0.95 opacity (Cyan #38bdf8)
+         At x=210..346 (e) -> 0.70 opacity
+         At x=382..516 (c) -> 0.45 opacity
+         At x=554..690 (h) -> 0.25 opacity
+         At x=710 (end of h) -> 0.0 opacity (vanishes before 'y' at x=726)
+    -->
+    <linearGradient id="g-fade-pri" gradientUnits="userSpaceOnUse" x1="10" y1="0" x2="715" y2="0">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.95"/>
+      <stop offset="25%" stop-color="#38bdf8" stop-opacity="0.85"/>
+      <stop offset="48%" stop-color="#38bdf8" stop-opacity="0.65"/>
+      <stop offset="70%" stop-color="#94a3b8" stop-opacity="0.45"/>
+      <stop offset="88%" stop-color="#94a3b8" stop-opacity="0.25"/>
+      <stop offset="97%" stop-color="#94a3b8" stop-opacity="0.08"/>
       <stop offset="100%" stop-color="#94a3b8" stop-opacity="0.0"/>
     </linearGradient>
 
-    <!-- Secondary guideline fading gradient -->
-    <linearGradient id="g-fade-sec" gradientUnits="userSpaceOnUse" x1="20" y1="0" x2="1050" y2="0">
-      <stop offset="0%" stop-color="#64748b" stop-opacity="0.7"/>
-      <stop offset="18%" stop-color="#64748b" stop-opacity="0.55"/>
-      <stop offset="36%" stop-color="#64748b" stop-opacity="0.3"/>
-      <stop offset="56%" stop-color="#64748b" stop-opacity="0.1"/>
-      <stop offset="74%" stop-color="#64748b" stop-opacity="0.02"/>
-      <stop offset="83%" stop-color="#64748b" stop-opacity="0.0"/>
+    <linearGradient id="g-fade-sec" gradientUnits="userSpaceOnUse" x1="10" y1="0" x2="715" y2="0">
+      <stop offset="0%" stop-color="#64748b" stop-opacity="0.90"/>
+      <stop offset="25%" stop-color="#64748b" stop-opacity="0.75"/>
+      <stop offset="48%" stop-color="#64748b" stop-opacity="0.55"/>
+      <stop offset="70%" stop-color="#64748b" stop-opacity="0.32"/>
+      <stop offset="88%" stop-color="#64748b" stop-opacity="0.18"/>
+      <stop offset="97%" stop-color="#64748b" stop-opacity="0.05"/>
       <stop offset="100%" stop-color="#64748b" stop-opacity="0.0"/>
     </linearGradient>
 
-    <!-- Blueprint 45-degree hatch pattern for unfinished T -->
-    <pattern id="hatch-t" width="10" height="10" patternTransform="rotate(45 0 0)" patternUnits="userSpaceOnUse">
-      <line x1="0" y1="0" x2="0" y2="10" stroke="#38bdf8" stroke-width="1.8" stroke-opacity="0.75" />
+    <!-- KARAKALEM (Pencil Sketch Shading) Patterns - Scaled for crisp visibility at both small & retina sizes -->
+    <!-- 1. Primary diagonal pencil hatch lines (45 deg, 14px pitch) -->
+    <pattern id="pencil-hatch-main" width="14" height="14" patternTransform="rotate(45 0 0)" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="0" y2="14" stroke="#f1f5f9" stroke-width="2.2" stroke-opacity="0.9" />
+      <line x1="7" y1="0" x2="7" y2="14" stroke="#38bdf8" stroke-width="1.6" stroke-opacity="0.7" />
     </pattern>
 
-    <!-- Secondary cross hatch -->
-    <pattern id="cross-t" width="8" height="8" patternTransform="rotate(-30 0 0)" patternUnits="userSpaceOnUse">
-      <line x1="0" y1="0" x2="0" y2="8" stroke="#94a3b8" stroke-width="1.2" stroke-opacity="0.45" />
+    <!-- 2. Secondary cross-hatch for shading depth (-35 deg, 18px pitch) -->
+    <pattern id="pencil-cross-hatch" width="18" height="18" patternTransform="rotate(-35 0 0)" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="0" y2="18" stroke="#94a3b8" stroke-width="1.4" stroke-opacity="0.6" stroke-dasharray="8 3" />
     </pattern>
+
+    <!-- Pencil base shading tint (soft graphite underlay) -->
+    <linearGradient id="pencil-base-tint" x1="36" y1="0" x2="110" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0284c7" stop-opacity="0.35" />
+      <stop offset="70%" stop-color="#334155" stop-opacity="0.45" />
+      <stop offset="100%" stop-color="#64748b" stop-opacity="0.3" />
+    </linearGradient>
+
+    <!-- Left half clip (draft / sketch side: x <= 110) -->
+    <clipPath id="clip-t-left">
+      <rect x="0" y="0" width="110" height="440" />
+    </clipPath>
+
+    <!-- Right half clip (finished logo side: x >= 110) -->
+    <clipPath id="clip-t-right">
+      <rect x="110" y="0" width="1010" height="440" />
+    </clipPath>
 
     <style>
-      .glyph { fill: #f8fafc; }
-      .guide-main { stroke: url(#g-fade-pri); }
-      .guide-sub { stroke: url(#g-fade-sec); }
+      .glyph-solid { fill: #f8fafc; }
+      .guide-pri { stroke: url(#g-fade-pri); }
+      .guide-sec { stroke: url(#g-fade-sec); }
     </style>
   </defs>
 
-  <rect width="1120" height="440" fill="#0d1117" />
+  <!-- ========================================================
+       1. HORIZONTAL ARCHITECTURAL GUIDELINES (ALL DASHED, FADING TO 'h')
+       ======================================================== -->
+  <g class="horizontal-guidelines">
+    <!-- Cap-height / T Crossbar Top (y=70) -->
+    <line x1="10" y1="70" x2="710" y2="70" class="guide-pri" stroke-width="1.8" stroke-dasharray="14 6" />
+    <!-- T Crossbar Bottom (y=98) -->
+    <line x1="10" y1="98" x2="695" y2="98" class="guide-sec" stroke-width="1.4" stroke-dasharray="10 5" />
+    <!-- x-Height: Top of e, c, r & arch of h (y=150) -->
+    <line x1="10" y1="150" x2="710" y2="150" class="guide-pri" stroke-width="1.8" stroke-dasharray="12 6" />
+    <!-- Midline / Waistline of e (y=210) -->
+    <line x1="10" y1="210" x2="690" y2="210" class="guide-sec" stroke-width="1.3" stroke-dasharray="8 5" />
+    <!-- Baseline of all letters (y=270) -->
+    <line x1="10" y1="270" x2="715" y2="270" class="guide-pri" stroke-width="2.0" stroke-dasharray="16 6 4 6" />
+  </g>
 
-  <!-- Horizontal architectural guidelines -->
-  <line x1="10" y1="70" x2="1080" y2="70" class="guide-main" stroke-width="1.5" />
-  <line x1="10" y1="98" x2="680" y2="98" class="guide-sub" stroke-width="1.2" stroke-dasharray="6 4" />
-  <line x1="10" y1="150" x2="1080" y2="150" class="guide-main" stroke-width="1.5" />
-  <line x1="10" y1="210" x2="650" y2="210" class="guide-sub" stroke-width="1" stroke-dasharray="4 4" />
-  <line x1="10" y1="270" x2="1080" y2="270" class="guide-main" stroke-width="1.75" />
-  <line x1="10" y1="380" x2="880" y2="380" class="guide-sub" stroke-width="1.2" stroke-dasharray="5 5" />
-
-  <!-- LOGICAL ARCHITECTURAL DRAFTING GUIDELINES AT T -->
+  <!-- ========================================================
+       2. ARCHITECTURAL DRAFTING HELPER LINES AROUND 'T' (ALL DASHED!)
+       ======================================================== -->
   <g class="construction-t" opacity="0.95">
-    <!-- 1. Central Axis of Symmetry (Centerline) -->
-    <line x1="110" y1="20" x2="110" y2="330" stroke="#38bdf8" stroke-width="1.4" stroke-dasharray="14 4 3 4" />
-    <line x1="102" y1="20" x2="118" y2="20" stroke="#38bdf8" stroke-width="1.5" />
-    <line x1="102" y1="330" x2="118" y2="330" stroke="#38bdf8" stroke-width="1.5" />
+    <!-- 2.1 Central Axis of Symmetry (Centerline at x=110) -->
+    <line x1="110" y1="12" x2="110" y2="338" stroke="#38bdf8" stroke-width="1.8" stroke-dasharray="16 4 4 4" />
+    <line x1="96" y1="12" x2="124" y2="12" stroke="#38bdf8" stroke-width="1.6" stroke-dasharray="5 3" />
+    <line x1="96" y1="338" x2="124" y2="338" stroke="#38bdf8" stroke-width="1.6" stroke-dasharray="5 3" />
 
-    <!-- 2. Vertical Stem Boundaries Projection (width = 28px) -->
-    <line x1="96" y1="40" x2="96" y2="305" stroke="#38bdf8" stroke-width="1.2" stroke-dasharray="5 3" />
-    <line x1="124" y1="40" x2="124" y2="305" stroke="#38bdf8" stroke-width="1.2" stroke-dasharray="5 3" />
+    <!-- 2.2 Vertical Stem Boundaries (width = 28px: x=96 and x=124) -->
+    <line x1="96" y1="32" x2="96" y2="318" stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="8 5" />
+    <line x1="124" y1="32" x2="124" y2="318" stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="8 5" />
 
-    <!-- 3. Crossbar Vertical Boundary Projections (width = 148px) -->
-    <line x1="36" y1="40" x2="36" y2="135" stroke="#38bdf8" stroke-width="1.5" />
-    <line x1="184" y1="40" x2="184" y2="135" stroke="#38bdf8" stroke-width="1.5" />
+    <!-- 2.3 Crossbar Vertical Boundaries (width = 148px: x=36 and x=184) -->
+    <line x1="36" y1="32" x2="36" y2="142" stroke="#38bdf8" stroke-width="1.6" stroke-dasharray="9 5" />
+    <line x1="184" y1="32" x2="184" y2="142" stroke="#38bdf8" stroke-width="1.6" stroke-dasharray="9 5" />
 
-    <!-- 4. Crossbar Horizontal Alignment Guides -->
-    <line x1="15" y1="70" x2="215" y2="70" stroke="#38bdf8" stroke-width="1.6" />
-    <line x1="20" y1="98" x2="205" y2="98" stroke="#94a3b8" stroke-width="1.2" stroke-dasharray="6 3" />
+    <!-- 2.4 Crossbar Horizontal Projections (Dashed extensions) -->
+    <line x1="8" y1="70" x2="230" y2="70" stroke="#38bdf8" stroke-width="1.6" stroke-dasharray="10 5" />
+    <line x1="12" y1="98" x2="225" y2="98" stroke="#94a3b8" stroke-width="1.4" stroke-dasharray="8 5" />
 
-    <!-- 5. 45-degree Set-Square Proportional Construction Rays -->
-    <line x1="36" y1="70" x2="184" y2="218" stroke="#38bdf8" stroke-width="1.2" stroke-dasharray="6 4" opacity="0.65" />
-    <line x1="184" y1="70" x2="36" y2="218" stroke="#38bdf8" stroke-width="1.2" stroke-dasharray="6 4" opacity="0.65" />
+    <!-- 2.5 45-degree Set-Square Proportional Construction Rays (Dashed) -->
+    <line x1="36" y1="70" x2="184" y2="218" stroke="#38bdf8" stroke-width="1.4" stroke-dasharray="10 6" opacity="0.8" />
+    <line x1="184" y1="70" x2="36" y2="218" stroke="#38bdf8" stroke-width="1.4" stroke-dasharray="10 6" opacity="0.8" />
+    <line x1="96" y1="270" x2="36" y2="70" stroke="#64748b" stroke-width="1.2" stroke-dasharray="8 5" opacity="0.65" />
+    <line x1="124" y1="270" x2="184" y2="70" stroke="#64748b" stroke-width="1.2" stroke-dasharray="8 5" opacity="0.65" />
 
-    <!-- Structural rays from stem base to crossbar ends -->
-    <line x1="96" y1="270" x2="36" y2="70" stroke="#64748b" stroke-width="1" stroke-dasharray="4 4" opacity="0.5" />
-    <line x1="124" y1="270" x2="184" y2="70" stroke="#64748b" stroke-width="1" stroke-dasharray="4 4" opacity="0.5" />
+    <!-- 2.6 Dimension Extension Lines (Witness lines - Dashed!) -->
+    <!-- Crossbar width witness line (top) -->
+    <line x1="36" y1="46" x2="184" y2="46" stroke="#38bdf8" stroke-width="1.4" stroke-dasharray="6 3" />
+    <!-- 45-degree corner ticks -->
+    <line x1="32" y1="50" x2="40" y2="42" stroke="#38bdf8" stroke-width="1.8" stroke-dasharray="4 2" />
+    <line x1="180" y1="50" x2="188" y2="42" stroke="#38bdf8" stroke-width="1.8" stroke-dasharray="4 2" />
 
-    <!-- 6. Architectural Dimension Extension Lines (Witness lines) -->
-    <line x1="36" y1="48" x2="184" y2="48" stroke="#38bdf8" stroke-width="1" />
-    <line x1="31" y1="53" x2="41" y2="43" stroke="#38bdf8" stroke-width="1.6" />
-    <line x1="179" y1="53" x2="189" y2="43" stroke="#38bdf8" stroke-width="1.6" />
+    <!-- Total height witness line (left) -->
+    <line x1="16" y1="70" x2="16" y2="270" stroke="#38bdf8" stroke-width="1.4" stroke-dasharray="6 3" />
+    <line x1="12" y1="74" x2="20" y2="66" stroke="#38bdf8" stroke-width="1.8" stroke-dasharray="4 2" />
+    <line x1="12" y1="274" x2="20" y2="266" stroke="#38bdf8" stroke-width="1.8" stroke-dasharray="4 2" />
 
-    <line x1="18" y1="70" x2="18" y2="270" stroke="#38bdf8" stroke-width="1" />
-    <line x1="13" y1="75" x2="23" y2="65" stroke="#38bdf8" stroke-width="1.6" />
-    <line x1="13" y1="275" x2="23" y2="265" stroke="#38bdf8" stroke-width="1.6" />
+    <!-- Stem base width witness line (bottom) -->
+    <line x1="96" y1="295" x2="124" y2="295" stroke="#38bdf8" stroke-width="1.3" stroke-dasharray="5 3" />
+    <line x1="93" y1="298" x2="99" y2="292" stroke="#38bdf8" stroke-width="1.6" stroke-dasharray="3 2" />
+    <line x1="121" y1="298" x2="127" y2="292" stroke="#38bdf8" stroke-width="1.6" stroke-dasharray="3 2" />
 
-    <!-- Vertex corner ticks -->
-    <line x1="26" y1="70" x2="46" y2="70" stroke="#38bdf8" stroke-width="2" />
-    <line x1="36" y1="60" x2="36" y2="80" stroke="#38bdf8" stroke-width="2" />
-    <line x1="174" y1="70" x2="194" y2="70" stroke="#38bdf8" stroke-width="2" />
-    <line x1="184" y1="60" x2="184" y2="80" stroke="#38bdf8" stroke-width="2" />
-    <line x1="82" y1="270" x2="138" y2="270" stroke="#38bdf8" stroke-width="2" />
+    <!-- Corner ticks on T outline (Dashed) -->
+    <line x1="22" y1="70" x2="50" y2="70" stroke="#38bdf8" stroke-width="2.0" stroke-dasharray="5 3" />
+    <line x1="36" y1="56" x2="36" y2="84" stroke="#38bdf8" stroke-width="2.0" stroke-dasharray="5 3" />
+    <line x1="170" y1="70" x2="198" y2="70" stroke="#38bdf8" stroke-width="2.0" stroke-dasharray="5 3" />
+    <line x1="184" y1="56" x2="184" y2="84" stroke="#38bdf8" stroke-width="2.0" stroke-dasharray="5 3" />
+    <line x1="78" y1="270" x2="142" y2="270" stroke="#38bdf8" stroke-width="2.0" stroke-dasharray="6 3" />
 
-    <!-- Center/Registration precision rings -->
-    <circle cx="36" cy="70" r="2.5" stroke="#38bdf8" stroke-width="1.2" fill="none" />
-    <circle cx="184" cy="70" r="2.5" stroke="#38bdf8" stroke-width="1.2" fill="none" />
-    <circle cx="110" cy="70" r="2.5" stroke="#38bdf8" stroke-width="1.2" fill="none" />
-    <circle cx="110" cy="144" r="3" stroke="#38bdf8" stroke-width="1.2" fill="none" opacity="0.8" />
-    <circle cx="110" cy="270" r="2.5" stroke="#38bdf8" stroke-width="1.2" fill="none" />
+    <!-- Center/Registration precision rings (Dashed) -->
+    <circle cx="36" cy="70" r="3.5" stroke="#38bdf8" stroke-width="1.4" stroke-dasharray="3 2" fill="none" />
+    <circle cx="184" cy="70" r="3.5" stroke="#38bdf8" stroke-width="1.4" stroke-dasharray="3 2" fill="none" />
+    <circle cx="110" cy="70" r="3.5" stroke="#38bdf8" stroke-width="1.4" stroke-dasharray="3 2" fill="none" />
+    <circle cx="110" cy="144" r="4.0" stroke="#38bdf8" stroke-width="1.4" stroke-dasharray="3 2" fill="none" opacity="0.85" />
+    <circle cx="110" cy="270" r="3.5" stroke="#38bdf8" stroke-width="1.4" stroke-dasharray="3 2" fill="none" />
   </g>
 
-  <!-- Fading guides across e and c -->
-  <g class="fading-guides" opacity="0.4">
-    <line x1="340" y1="95" x2="300" y2="315" stroke="#64748b" stroke-width="1.2" stroke-dasharray="5 5" />
-    <line x1="265" y1="240" x2="375" y2="120" stroke="#64748b" stroke-width="1" stroke-dasharray="4 4" />
-    <line x1="515" y1="115" x2="480" y2="305" stroke="#64748b" stroke-width="1" stroke-dasharray="3 6" opacity="0.4" />
+  <!-- ========================================================
+       3. INTER-LETTER DRAFTING GUIDES (DECREASING TOWARDS 'h', ALL DASHED)
+       ======================================================== -->
+  <!-- Across 'e' (Noticeable drafting presence ~0.65 opacity) -->
+  <g class="guides-across-e" opacity="0.65">
+    <line x1="210" y1="120" x2="210" y2="300" stroke="#38bdf8" stroke-width="1.4" stroke-dasharray="8 5" />
+    <line x1="346" y1="120" x2="346" y2="300" stroke="#38bdf8" stroke-width="1.4" stroke-dasharray="8 5" />
+    <line x1="278" y1="125" x2="278" y2="295" stroke="#94a3b8" stroke-width="1.2" stroke-dasharray="6 4" />
+    <line x1="225" y1="258" x2="338" y2="145" stroke="#64748b" stroke-width="1.1" stroke-dasharray="6 5" />
+    <circle cx="278" cy="210" r="3" stroke="#38bdf8" stroke-width="1.2" stroke-dasharray="3 2" fill="none" />
   </g>
 
-  <!-- Wordmark slanted by ~10 degrees (matrix skew -0.176) -->
+  <!-- Across 'c' (Diminishing presence ~0.42 opacity) -->
+  <g class="guides-across-c" opacity="0.42">
+    <line x1="382" y1="125" x2="382" y2="295" stroke="#38bdf8" stroke-width="1.2" stroke-dasharray="7 5" />
+    <line x1="516" y1="125" x2="516" y2="295" stroke="#38bdf8" stroke-width="1.2" stroke-dasharray="7 5" />
+    <line x1="450" y1="130" x2="450" y2="290" stroke="#94a3b8" stroke-width="1.1" stroke-dasharray="5 5" />
+    <circle cx="450" cy="210" r="2.5" stroke="#94a3b8" stroke-width="1.0" stroke-dasharray="3 2" fill="none" />
+  </g>
+
+  <!-- Across 'h' (Final faint presence ~0.24 opacity, terminating before y) -->
+  <g class="guides-across-h" opacity="0.25">
+    <line x1="554" y1="45" x2="554" y2="295" stroke="#38bdf8" stroke-width="1.2" stroke-dasharray="6 6" />
+    <line x1="690" y1="125" x2="690" y2="295" stroke="#94a3b8" stroke-width="1.0" stroke-dasharray="5 6" />
+    <line x1="622" y1="130" x2="622" y2="285" stroke="#64748b" stroke-width="0.9" stroke-dasharray="4 6" />
+  </g>
+  <!-- NOTE: NO GUIDES EXIST BEYOND 'h' (y and r are 100% finished!) -->
+
+  <!-- ========================================================
+       4. WORDMARK SLANTED BY ~10 DEGREES (matrix skew -0.176)
+       ======================================================== -->
   <g transform="matrix(1 0 -0.176 1 45 0)">
 
-    <!-- LETTER T (In-progress architectural sketch) -->
-    <g class="letter-T-unfinished">
-      <path d="
-        M 36 70
-        L 184 70
-        L 184 98
-        L 124 98
-        L 124 270
-        L 96 270
-        L 96 98
-        L 36 98
-        Z
-      " fill="url(#hatch-t)" stroke="#38bdf8" stroke-width="2.2" stroke-linejoin="miter" />
+    <!-- LETTER T: TRANSITION FROM KARAKALEM SKETCH (LEFT) TO FINISHED LOGO (RIGHT) -->
+    <g class="letter-T-concept-to-system">
 
-      <path d="M 36 70 L 184 70 L 184 98 L 36 98 Z" fill="url(#cross-t)" opacity="0.75" />
+      <!-- [A] LEFT HALF: KARAKALEM PENCIL SKETCH SHADING (x <= 110) -->
+      <g clip-path="url(#clip-t-left)">
+        <!-- 1. Graphite body tint -->
+        <path d="M 36 70 L 184 70 L 184 98 L 124 98 L 124 270 L 96 270 L 96 98 L 36 98 Z"
+              fill="url(#pencil-base-tint)" />
 
-      <path d="
-        M 36 70
-        L 110 70
-        L 110 98
-        L 124 98
-        L 124 165
-        L 96 165
-        L 96 98
-        L 36 98
-        Z
-      " fill="#38bdf8" opacity="0.45" />
+        <!-- 2. Primary distinct 45-degree pencil hatch strokes -->
+        <path d="M 36 70 L 184 70 L 184 98 L 124 98 L 124 270 L 96 270 L 96 98 L 36 98 Z"
+              fill="url(#pencil-hatch-main)" />
 
-      <path d="
-        M 34 68 L 186 68 L 186 100 L 126 100 L 126 272 L 94 272 L 94 100 L 34 100 Z
-      " stroke="#38bdf8" stroke-width="1" stroke-dasharray="8 3" opacity="0.6" fill="none" />
+        <!-- 3. Secondary cross-hatch for authentic pencil texture -->
+        <path d="M 36 70 L 184 70 L 184 98 L 124 98 L 124 270 L 96 270 L 96 98 L 36 98 Z"
+              fill="url(#pencil-cross-hatch)" />
 
-      <line x1="22" y1="70" x2="198" y2="70" stroke="#38bdf8" stroke-width="2" />
-      <line x1="26" y1="98" x2="194" y2="98" stroke="#38bdf8" stroke-width="1.5" opacity="0.75" />
-      <line x1="36" y1="56" x2="36" y2="112" stroke="#38bdf8" stroke-width="2" />
-      <line x1="184" y1="56" x2="184" y2="112" stroke="#38bdf8" stroke-width="2" />
-      <line x1="96" y1="84" x2="96" y2="284" stroke="#38bdf8" stroke-width="1.6" />
-      <line x1="124" y1="84" x2="124" y2="284" stroke="#38bdf8" stroke-width="1.6" />
-      <line x1="82" y1="270" x2="138" y2="270" stroke="#38bdf8" stroke-width="2" />
+        <!-- 4. Architectural drafting pencil contour lines with classic sketch overshoots -->
+        <!-- Top horizontal crossbar stroke (overshoot past left) -->
+        <line x1="24" y1="70" x2="114" y2="70" stroke="#38bdf8" stroke-width="2.2" stroke-dasharray="16 4 8 3" />
+        <line x1="28" y1="71" x2="110" y2="71" stroke="#f1f5f9" stroke-width="1.2" opacity="0.85" />
+        <!-- Bottom horizontal crossbar stroke -->
+        <line x1="24" y1="98" x2="114" y2="98" stroke="#38bdf8" stroke-width="2.0" stroke-dasharray="12 4 6 3" />
+        <!-- Left vertical crossbar end -->
+        <line x1="36" y1="58" x2="36" y2="110" stroke="#38bdf8" stroke-width="2.2" stroke-dasharray="14 3" />
+        <!-- Left vertical stem edge (overshoot down) -->
+        <line x1="96" y1="86" x2="96" y2="282" stroke="#38bdf8" stroke-width="2.2" stroke-dasharray="18 4 10 3" />
+        <line x1="97" y1="92" x2="97" y2="276" stroke="#f1f5f9" stroke-width="1.2" opacity="0.8" />
+        <!-- Bottom stem horizontal stroke (overshoot) -->
+        <line x1="84" y1="270" x2="114" y2="270" stroke="#38bdf8" stroke-width="2.2" stroke-dasharray="10 4" />
+
+        <!-- Draft sketch ghost inner boundary -->
+        <path d="M 34 68 L 110 68 L 110 100 L 94 100 L 94 272 L 110 272"
+              stroke="#38bdf8" stroke-width="1.2" stroke-dasharray="8 4" opacity="0.65" fill="none" />
+      </g>
+
+      <!-- [B] RIGHT HALF: SOLID FINISHED WHITE LOGO (x >= 110) -->
+      <g clip-path="url(#clip-t-right)">
+        <path d="M 36 70 L 184 70 L 184 98 L 124 98 L 124 270 L 96 270 L 96 98 L 36 98 Z"
+              fill="#f8fafc" />
+      </g>
+
+      <!-- [C] THE TRANSITION AXIS (x = 110: The Metamorphosis Line) -->
+      <!-- Vertical dividing axis dashed line -->
+      <line x1="110" y1="60" x2="110" y2="108" stroke="#38bdf8" stroke-width="2.5" stroke-dasharray="8 3 3 3" />
+      <line x1="110" y1="98" x2="110" y2="280" stroke="#38bdf8" stroke-width="2.2" stroke-dasharray="10 4 3 4" />
+      <!-- Luminous transition alignment nodes at top, neck and base -->
+      <circle cx="110" cy="70" r="3.0" fill="#38bdf8" />
+      <circle cx="110" cy="98" r="3.0" fill="#38bdf8" />
+      <circle cx="110" cy="270" r="3.0" fill="#38bdf8" />
     </g>
 
-    <!-- LETTER e -->
-    <path class="glyph" d="
+    <!-- LETTER e (100% Solid Finished Glyph) -->
+    <path class="glyph-solid" d="
       M 210 210
       C 210 172 240 150 278 150
       C 316 150 346 172 346 210
@@ -173,8 +244,8 @@
       Z
     " />
 
-    <!-- LETTER c (Identical twin of e) -->
-    <path class="glyph" d="
+    <!-- LETTER c (100% Solid Finished Glyph - Identical twin of e) -->
+    <path class="glyph-solid" d="
       M 516 170
       L 500 182
       C 492 172 472 166 450 166
@@ -189,8 +260,8 @@
       Z
     " />
 
-    <!-- LETTER h (Original as requested) -->
-    <path class="glyph" d="
+    <!-- LETTER h (100% Solid Finished Glyph) -->
+    <path class="glyph-solid" d="
       M 554 70
       L 582 70
       L 582 176
@@ -206,8 +277,8 @@
       Z
     " />
 
-    <!-- LETTER y (h flipped 180 degrees as requested!) -->
-    <path class="glyph" d="
+    <!-- LETTER y (100% Solid Finished Glyph - h flipped 180 degrees) -->
+    <path class="glyph-solid" d="
       M 862 380
       L 834 380
       L 834 244
@@ -223,8 +294,8 @@
       Z
     " />
 
-    <!-- LETTER r -->
-    <path class="glyph" d="
+    <!-- LETTER r (100% Solid Finished Glyph) -->
+    <path class="glyph-solid" d="
       M 898 150
       L 926 150
       L 926 180
