@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Logo ve Favicon Önizleme | Techyr</title>
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon.png" />
+    <style>
+      :root {
+        --bg: #0b0f15;
+        --card: #121822;
+        --border: #1e293b;
+        --text: #f8fafc;
+        --muted: #94a3b8;
+        --cyan: #38bdf8;
+      }
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: var(--bg);
+        color: var(--text);
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        padding: 40px 24px;
+        line-height: 1.5;
+      }
+      .container {
+        max-width: 960px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+      }
+      header h1 {
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 8px;
+        color: var(--cyan);
+      }
+      header p {
+        color: var(--muted);
+        font-size: 15px;
+      }
+      .card {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+      }
+      .card h2 {
+        font-size: 18px;
+        font-weight: 600;
+      }
+      .card p {
+        color: var(--muted);
+        font-size: 14px;
+      }
+      .checkerboard {
+        background-color: #1a2230;
+        background-image:
+          linear-gradient(45deg, #131a24 25%, transparent 25%),
+          linear-gradient(-45deg, #131a24 25%, transparent 25%),
+          linear-gradient(45deg, transparent 75%, #131a24 75%),
+          linear-gradient(-45deg, transparent 75%, #131a24 75%);
+        background-size: 20px 20px;
+        background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+        padding: 32px;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .mock-nav {
+        background: rgba(11, 15, 21, 0.95);
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        padding: 16px 24px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .mock-links {
+        display: flex;
+        gap: 20px;
+        color: var(--muted);
+        font-size: 14px;
+        align-items: center;
+      }
+      .favicons-row {
+        display: flex;
+        gap: 28px;
+        align-items: flex-end;
+        flex-wrap: wrap;
+        padding: 24px;
+        background: rgba(0, 0, 0, 0.35);
+        border-radius: 8px;
+      }
+      .fav-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+      }
+      .fav-box {
+        background: rgba(255, 255, 255, 0.04);
+        border: 1px dashed var(--border);
+        border-radius: 6px;
+        padding: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .fav-item span {
+        font-size: 12px;
+        color: var(--muted);
+      }
+      .badge {
+        display: inline-block;
+        padding: 4px 10px;
+        border-radius: 999px;
+        font-size: 12px;
+        background: rgba(56, 189, 248, 0.15);
+        color: var(--cyan);
+        border: 1px solid rgba(56, 189, 248, 0.3);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Techyr - Logo ve Favicon Güncelleme Önizlemesi</h1>
+        <p>logo.psd ve favicon.psd dosyalarından şeffaf arka planla aktarıldı.</p>
+      </header>
+
+      <section class="card">
+        <div>
+          <h2>1. Site Logosu (Şeffaf Arka Plan)</h2>
+          <p>Kareli alan şeffaflığı gösterir. Logo zaten "techyr" içerdiği için yanına hiçbir metin eklenmemiştir.</p>
+        </div>
+        <div class="checkerboard">
+          <img src="./techyr-logo.png" alt="Techyr Logo" style="max-width: 100%; height: auto;" />
+        </div>
+        <div class="mock-nav">
+          <a href="#" style="display: flex; align-items: center;">
+            <img src="./techyr-logo.png" alt="Techyr" width="140" height="55" style="object-fit: contain;" />
+          </a>
+          <div class="mock-links">
+            <span>Çözümler</span>
+            <span>Ödeme Sistemleri</span>
+            <span>Yaklaşımımız</span>
+            <span class="badge">Birlikte çalışalım &nearr;</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="card">
+        <div>
+          <h2>2. Favicon (Çeşitli Boyutlar &amp; Şeffaf Arka Plan)</h2>
+          <p>favicon.psd dosyasındaki ikon kare kanvasa oran korumalı olarak yerleştirildi.</p>
+        </div>
+        <div class="favicons-row">
+          <div class="fav-item">
+            <div class="fav-box">
+              <img src="./favicon.png" width="16" height="16" alt="16x16" />
+            </div>
+            <span>16x16 (Sekme)</span>
+          </div>
+          <div class="fav-item">
+            <div class="fav-box">
+              <img src="./favicon.png" width="32" height="32" alt="32x32" />
+            </div>
+            <span>32x32 (Standart)</span>
+          </div>
+          <div class="fav-item">
+            <div class="fav-box">
+              <img src="./favicon.png" width="48" height="48" alt="48x48" />
+            </div>
+            <span>48x48</span>
+          </div>
+          <div class="fav-item">
+            <div class="fav-box">
+              <img src="./favicon.png" width="64" height="64" alt="64x64" />
+            </div>
+            <span>64x64</span>
+          </div>
+          <div class="fav-item">
+            <div class="fav-box">
+              <img src="./favicon.png" width="128" height="128" alt="128x128" />
+            </div>
+            <span>128x128 (Retina)</span>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

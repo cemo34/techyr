@@ -147,7 +147,7 @@ export default function App() {
       </a>
       <header className="site-header container">
         <a className="brand" href="#" aria-label="Techyr ana sayfa">
-          <img src="/techyr-logo.svg" alt="Techyr" width="132" height="62" />
+          <img src="/techyr-logo.png" alt="Techyr" width="140" height="55" />
         </a>
         <button
           className="menu-toggle"
@@ -374,7 +374,7 @@ export default function App() {
       </main>
       <footer className="footer container">
         <a className="brand" href="#" aria-label="Sayfanın başına dön">
-          <img src="/techyr-logo.svg" alt="Techyr" width="132" height="62" />
+          <img src="/techyr-logo.png" alt="Techyr" width="140" height="55" />
         </a>
         <p>Teknolojiyi işinize bağlarız.</p>
         <span>© {new Date().getFullYear()} Techyr</span>
