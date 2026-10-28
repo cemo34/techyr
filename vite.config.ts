@@ -1,6 +1,8 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 
+const buildTimestamp = Date.now().toString(36);
+
 export default defineConfig({
   plugins: [
     react(),
@@ -11,5 +13,12 @@ export default defineConfig({
       },
     },
   ],
+  build: {
+    rollupOptions: {
+      output: {
+        entryFileNames: `assets/[name]-[hash]-${buildTimestamp}.js`,
+        chunkFileNames: `assets/[name]-[hash]-${buildTimestamp}.js`,
+      },
+    },
+  },
 });
-
